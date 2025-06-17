@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página Responsiva com Variáveis</title>
+  <style>
+    /* Variáveis base para tamanhos pequenos */
+    :root {
+      --font-size-title: 20px;
+      --font-size-subtitle: 16px;
+      --spacing-section: 16px;
+      --spacing-element: 12px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: var(--spacing-section);
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #4CAF50;
+      padding: var(--spacing-element);
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: var(--font-size-title);
+      margin-bottom: var(--spacing-element);
+    }
+
+    h2 {
+      font-size: var(--font-size-subtitle);
+      margin-bottom: var(--spacing-element);
+    }
+
+    section {
+      background-color: white;
+      margin-top: var(--spacing-section);
+      padding: var(--spacing-element);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Telas médias */
+    @media (min-width: 600px) {
+      :root {
+        --font-size-title: 24px;
+        --font-size-subtitle: 18px;
+        --spacing-section: 24px;
+        --spacing-element: 16px;
+      }
+    }
+
+    /* Telas grandes (desktop) */
+    @media (min-width: 992px) {
+      :root {
+        --font-size-title: 32px;
+        --font-size-subtitle: 24px;
+        --spacing-section: 40px;
+        --spacing-element: 24px;
+      }
+
+      body {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Minha Página Responsiva</h1>
+    <h2>Com variáveis CSS e media queries</h2>
+  </header>
+
+  <section>
+    <p>Este é um exemplo de como usar variáveis CSS para gerenciar tamanhos de fonte e espaçamentos de forma responsiva. Com isso, o layout se adapta a diferentes tamanhos de tela de maneira consistente e elegante.</p>
+  </section>
+
+</body>
+</html>
