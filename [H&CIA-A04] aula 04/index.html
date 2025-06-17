@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site com Paleta Harmoniosa</title>
+  <style>
+    :root {
+      --cor-primaria: #4A90E2;
+      --cor-secundaria: #50E3C2;
+      --cor-destaque: #F5A623;
+      --cor-fundo: #F7F9FC;
+      --cor-texto: #333333;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
+
+    header {
+      background-color: var(--cor-primaria);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 20px;
+      background-color: white;
+    }
+
+    aside {
+      background-color: var(--cor-secundaria);
+      padding: 20px;
+      color: white;
+    }
+
+    footer {
+      background-color: var(--cor-primaria);
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .btn {
+      background-color: var(--cor-destaque);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px 0;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #d4881a;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .content {
+      flex: 2;
+    }
+
+    aside {
+      flex: 1;
+    }
+
+    a {
+      color: var(--cor-primaria);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bem-vindo ao Meu Site</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="content">
+      <h2>Seção Principal</h2>
+      <p>Este é um exemplo de site estilizado com uma paleta de cores harmoniosa. Utilize essas cores para criar uma experiência visual agradável ao usuário.</p>
+      <button class="btn">Clique Aqui</button>
+      <p>Leia mais em <a href="#">nosso blog</a>.</p>
+    </section>
+
+    <aside>
+      <h3>Barra Lateral</h3>
+      <p>Informações adicionais, links úteis, ou widgets podem ser colocados aqui.</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+
