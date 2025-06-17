@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contêiner Flexível</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: sans-serif;
+      background-color: #f0f4f8;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;      /* Centraliza horizontalmente */
+      align-items: center;          /* Centraliza verticalmente */
+      min-height: 100vh;            /* Altura mínima da viewport */
+      background-color: #e1e8ed;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      background-color: #4A90E2;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">Caixa 1</div>
+    <div class="box">Caixa 2</div>
+    <div class="box">Caixa 3</div>
+  </div>
+
+</body>
+</html>
+
+</body>
+</html>
